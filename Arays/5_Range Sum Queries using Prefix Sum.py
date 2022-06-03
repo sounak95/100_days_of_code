@@ -15,4 +15,29 @@ sumInRange = prefixSum[j]  , if i = 0
 otherwise,
 
 sumInRange = prefixSum[j] - prefixSum[i-1]  ,  if (i != 0).
+
+input
+1 2 3 4 5
+1
+3
+
+output
+9
+
 '''
+
+arr= list(map(int, input().split()))
+start=int(input())
+end=int(input())
+n=len(arr)
+prefixSum = [0] * n
+prefixSum[0]=arr[0]
+for i in range(1,n):
+    prefixSum[i] = prefixSum[i-1] + arr[i]
+
+# print(prefixSum)
+
+if start==0:
+    print(prefixSum[end])
+else:
+    print(prefixSum[end]-prefixSum[start-1])
