@@ -23,27 +23,30 @@ for (i=0 to n-1)
 Time Complexity : O(n^2)
 Auxiliary Space : O(1)
 
-Tricky Solution : The idea is to get total sum of array first. Then Iterate through the array and keep updating the left sum which is initialized as zero. In the loop, we can get right sum by subtracting the elements one by one. Then check whether Leftsum and Rightsum are equal.
-Pseudo Code
-// n : size of array
-int eqindex(arr, n)
-{
-    sum = 0
-    leftsum = 0
-    for (i=0 to n-1)
-        sum += arr[i]
 
-    for (i=0 to n-1)
-    {
-        // now sum will be righsum for index i
-        sum -= a[i]
-        if (sum == leftsum )
-            return i
-        leftsum += a[i]
-    }
-}
-Time Complexity : O(n)
-Auxiliary Space : O(1)
+input:
+-7 1 5 2 -4 3 0
 
+output:
+2
 """
+
+arr = list(map(int,input().split()))
+n= len(arr)
+flag=True
+for i in range(n):
+    left_sum=0
+    right_sum=0
+    for j in range(0, i):
+        left_sum+=arr[j]
+    for j in range(i+1, n):
+        right_sum+=arr[j]
+
+    if left_sum==right_sum:
+        flag=False
+        print(i)
+        break
+
+if flag:
+    print(-1)
 
