@@ -19,3 +19,15 @@ Output: 123
 
 """
 
+str="123abc1"
+sum=0
+temp=''
+
+for ch in str:
+    if ch.isdigit():
+        temp+=ch
+    else:
+        sum+=int(temp)
+        temp='0'
+sum+=int(temp)
+print(sum)
