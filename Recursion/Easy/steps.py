@@ -13,10 +13,5 @@ def helper(n,count):
         return helper(n-1, count+1)
 
 
-
-
-
-
-
 if __name__ == "__main__":
     print(numberOfSteps(123))
