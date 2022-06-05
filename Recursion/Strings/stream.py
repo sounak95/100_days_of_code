@@ -45,5 +45,3 @@ if __name__ == "__main__":
     # print(skip2("bacapplcdah"))
     # print(skip_apple("appleabc", "apple"))
     print(skip_app_not_apple("bacapplcdah"))
-
-
