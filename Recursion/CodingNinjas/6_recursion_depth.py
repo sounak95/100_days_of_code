@@ -8,5 +8,6 @@ def fact(n):
 
 import sys
 sys.setrecursionlimit(3000)
+
 if __name__ == "__main__":
     print(fact(1000))
