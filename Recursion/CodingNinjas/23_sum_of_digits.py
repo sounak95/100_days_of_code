@@ -17,3 +17,14 @@ Sample Input 2 :
 Sample Output 2 :
 9
 '''
+
+
+
+def sum_of_digits(n, s):
+    if n<=0:
+        return s
+    rem=n%10
+    s+=rem
+    return sum_of_digits(n//10,s)
+
+print(sum_of_digits(int(input()),0))
