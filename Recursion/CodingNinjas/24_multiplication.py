@@ -22,3 +22,10 @@ Sample Output 2 :
 
 
 '''
+
+def mul(n1,n2):
+    if n2==0 or n1==0:
+        return 0
+    return n1 + mul(n1,n2-1)
+
+print(mul(int(input()),int(input())))
