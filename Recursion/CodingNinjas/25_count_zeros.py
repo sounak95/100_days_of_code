@@ -25,8 +25,29 @@ Sample Output 3 :
 '''
 
 
+
+
+
+
+def count(n):
+    if n in range(1, 10):
+        return 0
+    if n == 0:
+        return 1
+    so = count(n // 10)
+
+    if n % 10 == 0:
+        return so + 1
+    else:
+        return so
+
+
+
+# n = int(input())
+# print(count(n))
+
 def count_zeros(n,s):
-    if n==0:
+    if n<=0:
         return s
     rem = n % 10
     if rem==0:
@@ -34,16 +55,8 @@ def count_zeros(n,s):
     else:
         return count_zeros(n // 10, s)
 
-def solve(n, s=0):
-    # print(n)
-    if n == "":
-        return s
-
-    if n[0] == "0":
-        return solve(n[1:], s + 1)
-    else:
-        return solve(n[1:], s)
-
-print(solve("02345600"))
-
-# print(count_zeros(abs(int(input())),0))
+n=int(input())
+if n==0:
+    print(1)
+else:
+	print(count_zeros(n,0))
