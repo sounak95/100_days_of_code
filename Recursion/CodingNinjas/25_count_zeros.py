@@ -34,5 +34,16 @@ def count_zeros(n,s):
     else:
         return count_zeros(n // 10, s)
 
+def solve(n, s=0):
+    # print(n)
+    if n == "":
+        return s
 
-print(count_zeros(abs(int(input())),0))
+    if n[0] == "0":
+        return solve(n[1:], s + 1)
+    else:
+        return solve(n[1:], s)
+
+print(solve("02345600"))
+
+# print(count_zeros(abs(int(input())),0))
