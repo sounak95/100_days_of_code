@@ -14,3 +14,4 @@ def helper(n, c):
 
 if __name__ == "__main__":
     print(count(302100040))
+    print(count(0))
