@@ -1,5 +1,5 @@
 
-import math
+
 
 def getMaxWaterContainer(heights):
     max_area= float('-inf')
