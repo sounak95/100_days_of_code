@@ -33,7 +33,8 @@ Output:
 7
 """
 
-arr = list(map(int,input().split()))
+# arr = list(map(int,input().split()))
+arr=[1, 2, 3, 3, 4, 0, 10, 6, 5, -1, -3, 2, 3]
 n= len(arr)
 
 max_so_far= float('-inf')
@@ -45,3 +46,6 @@ for i in range(n):
     if max_ending_here <0:
         max_ending_here=0
 print(max_so_far)
+
+
+
