@@ -7,7 +7,7 @@ def sortedSquaredArray(array):
     largeIndex=len(array)-1
 
     for idx in reversed(range(len(array))):
-        if array[smallIndex]>array[largeIndex]:
+        if abs(array[smallIndex])>abs(array[largeIndex]):
             sortedSquared[idx] = array[smallIndex]*array[smallIndex]
             smallIndex+=1
         else:
