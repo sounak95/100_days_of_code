@@ -20,7 +20,7 @@ def lengthOfLongestSubstring(s):
                 longest_substr=substr
 
     # print(longest_substr)
-    return    max_length
+    return max_length
 
 print(lengthOfLongestSubstring("abcabcbb"))
 print(lengthOfLongestSubstring(" "))
