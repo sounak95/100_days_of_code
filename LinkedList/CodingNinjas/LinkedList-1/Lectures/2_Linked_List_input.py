@@ -12,6 +12,32 @@ def print_ll(head):
     print(None)
     return
 
+def length(head):
+    count=0
+    while head is not None:
+        count+=1
+        head=head.next
+    return count
+
+def insert_at_i(head,i,data):
+    if i<0 or  i>length(head):
+        return head
+    count=0
+    prev=None
+    curr=head
+    newNode=Node(data)
+    while(count<i):
+        prev=curr
+        curr=curr.next
+        count+=1
+
+    if prev is not None:
+        prev.next=newNode
+    else:
+        head=newNode
+    newNode.next=curr
+    return head
+
 
 def takeInput():
     inputList=[int(ele) for ele in input().split()]
@@ -47,5 +73,10 @@ def takeInput1():
 
 
 head=takeInput1()
-# print(head)
+print_ll(head)
+head=insert_at_i(head,2,6)
+print_ll(head)
+head=insert_at_i(head,0,9)
+print_ll(head)
+head=insert_at_i(head,8,10)
 print_ll(head)
