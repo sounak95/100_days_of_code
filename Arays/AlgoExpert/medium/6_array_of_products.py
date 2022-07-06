@@ -18,7 +18,8 @@ def arrayOfProducts(array):
 
     for i in range(len(array)):
         prodcut[i]=leftProduct[i]*rightProduct[i]
-
+    print(leftProduct)
+    print(rightProduct)
     return prodcut
 
 print(arrayOfProducts([5, 1, 4, 2]))

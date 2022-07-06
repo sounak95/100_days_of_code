@@ -21,4 +21,4 @@ def runLengthEncoding(string):
     return "".join(encodedStringCharacters)
 
 
-print(runLengthEncoding("AAAAAAAAAAAAABBCCCCDD"))
+print(runLengthEncoding("AAAAAAAAAAAAABBCCCCDDE"))
