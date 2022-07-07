@@ -19,6 +19,14 @@ def length(head):
         head=head.next
     return count
 
+def lengthR_helper(head, count):
+    if head is None:
+        return count
+    return lengthR_helper(head.next, count+1)
+
+def lengthR(head):
+    return  lengthR_helper(head, 0)
+
 def insert_at_i(head,i,data):
     if i<0 or  i>length(head):
         return head
@@ -36,6 +44,33 @@ def insert_at_i(head,i,data):
     else:
         head=newNode
     newNode.next=curr
+    return head
+
+def insert_at_iR(head,i,data):
+    if i<0:
+        return head
+    if i==0:
+        newNode= Node(data)
+        newNode.next=head
+        return newNode
+    if head is None:
+        return None
+
+    smallHead= insert_at_iR(head.next,i-1, data)
+    head.next=smallHead
+    return head
+
+def delete_at_iR(head,i):
+    if i<0:
+        return head
+    if i==0:
+        return head.next
+
+    if head is None:
+        return None
+
+    smallHead= delete_at_iR(head.next, i-1)
+    head.next=smallHead
     return head
 
 
@@ -73,10 +108,21 @@ def takeInput1():
 
 
 head=takeInput1()
+# print_ll(head)
+# head=insert_at_i(head,2,6)
+# print_ll(head)
+# head=insert_at_i(head,0,9)
+# print_ll(head)
+# head=insert_at_i(head,8,10)
+# print_ll(head)
+
 print_ll(head)
-head=insert_at_i(head,2,6)
+head=insert_at_iR(head,2,6)
 print_ll(head)
-head=insert_at_i(head,0,9)
+head=insert_at_iR(head,0,9)
 print_ll(head)
-head=insert_at_i(head,8,10)
+head=insert_at_iR(head,8,10)
+print_ll(head)
+# print(lengthR(head))
+delete_at_iR(head,2)
 print_ll(head)
