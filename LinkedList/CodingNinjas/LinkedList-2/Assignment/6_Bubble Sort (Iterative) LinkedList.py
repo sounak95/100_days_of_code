@@ -37,9 +37,54 @@ class Node :
 
 
 
+
+def length(head):
+    count=0
+    while head is not None:
+        count+=1
+        head=head.next
+    return count
+#   p c f
+# 1 3 5 2 6
+#   p c f
+# 1 3 2 5 6
+
+# c f
+# 3 2 1
+# p c f
+# 2 3 1
 def bubbleSort(head) :
-	#Your code goes here
-    pass
+    n= length(head)
+    # print(n)
+    for i in range(n):
+        prev= None
+        curr = head
+
+        for j in range(n-1-i):
+            if curr.data<=curr.next.data:
+                prev= curr
+                curr= curr.next
+            else:
+                if prev is not None:
+                    fwd = curr.next
+                    prev.next = fwd
+                    curr.next=fwd.next
+                    fwd.next = curr
+                    prev = fwd
+                else:
+                    fwd = curr.next
+                    head=head.next
+                    curr.next=fwd.next
+                    fwd.next=curr
+                    prev=fwd
+
+
+
+
+    return head
+
+
+
 
 
 
