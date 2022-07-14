@@ -77,10 +77,6 @@ def bubbleSort(head) :
                     curr.next=fwd.next
                     fwd.next=curr
                     prev=fwd
-
-
-
-
     return head
 
 
