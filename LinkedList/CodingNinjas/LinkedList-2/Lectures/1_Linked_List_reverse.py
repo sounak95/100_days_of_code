@@ -121,7 +121,7 @@ def reversal2(head):
     if head is None or head.next is None:
         return head, head
     smallHead, smallTail=reversal2(head.next)
-    smallTail.next=head
+    smallTail.next = head
     head.next=None
     return smallHead, head
 
