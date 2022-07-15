@@ -21,8 +21,6 @@ def partition(a,si,ei):
             j = j - 1
     return pivot_index
 
-
-
 def quick_sort(a,si,ei):
     if si>=ei:
         return
