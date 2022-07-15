@@ -1,6 +1,6 @@
 
 
-def toh(n,source, auxillary, destination):
+def toh(n,source, destination, auxillary):
     if n==1:
         print(f"move disk 1 from {source} to {destination}")
         return
