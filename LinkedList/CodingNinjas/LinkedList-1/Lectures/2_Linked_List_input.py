@@ -35,10 +35,17 @@ def insert_at_i(head,i,data):
     curr=head
     newNode=Node(data)
     while(count<i):
+        # print(f"Count: {count}")
+        # if prev is not None:
+        #     print(f"Prev: {prev.data}")
+        # if curr is not None:
+        #     print(f"Curr: {curr.data}")
         prev=curr
         curr=curr.next
         count+=1
 
+    print(f"Prev: {prev.data}")
+    print(f"Curr: {curr.data}")
     if prev is not None:
         prev.next=newNode
     else:
@@ -108,21 +115,21 @@ def takeInput1():
 
 
 head=takeInput1()
-# print_ll(head)
-# head=insert_at_i(head,2,6)
-# print_ll(head)
+print_ll(head)
+head=insert_at_i(head,2,6)
+print_ll(head)
 # head=insert_at_i(head,0,9)
 # print_ll(head)
 # head=insert_at_i(head,8,10)
 # print_ll(head)
 
-print_ll(head)
-head=insert_at_iR(head,2,6)
-print_ll(head)
-head=insert_at_iR(head,0,9)
-print_ll(head)
-head=insert_at_iR(head,8,10)
-print_ll(head)
-# print(lengthR(head))
-delete_at_iR(head,2)
-print_ll(head)
+# print_ll(head)
+# head=insert_at_iR(head,2,6)
+# print_ll(head)
+# head=insert_at_iR(head,0,9)
+# print_ll(head)
+# head=insert_at_iR(head,8,10)
+# print_ll(head)
+# # print(lengthR(head))
+# delete_at_iR(head,2)
+# print_ll(head)
