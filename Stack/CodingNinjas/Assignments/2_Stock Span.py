@@ -38,8 +38,37 @@ Sample Output 2:
 
 from sys import stdin
 
-def stockSpan(price, n) :
+
+def stockSpan_bruteforce(price, n) :
 	#Your code goes here
+    s=[None]*n
+    s[0]=1
+    for i in range(1,n):
+        j=i-1
+        s[i]=1
+        while(j>=0 and price[i]>price[j]):
+            s[i]+=1
+            j-=1
+    return s
+
+def stockSpan(price, n) :
+    st=[]
+    st.append(0)
+    s = [None] * n
+    s[0]=1
+
+    for i in range(1,n):
+        while(len(st)>0 and price[i]>price[st[-1]]):
+            st.pop()
+        if len(st)==0:
+            s[i]=i+1
+        else:
+            s[i]=i-st[-1]
+        st.append(i)
+    return s
+
+
+
 
 
 
