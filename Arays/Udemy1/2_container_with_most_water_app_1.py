@@ -14,5 +14,5 @@ def getMaxWaterContainer(heights):
 
 
 
-heightsArray = [4,8,1,2,3,9];
+heightsArray = [4,8,1,2,3,9]
 print(getMaxWaterContainer(heightsArray))

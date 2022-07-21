@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/valid-mountain-array/
+
 def validMountainArray( arr):
     """
     :type arr: List[int]
