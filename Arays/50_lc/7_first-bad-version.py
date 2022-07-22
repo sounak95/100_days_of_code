@@ -1,6 +1,4 @@
-# The isBadVersion API is already defined for you.
-# @param version, an integer
-# @return a bool
+
 # def isBadVersion(version):
 # https://leetcode.com/problems/first-bad-version/
 
