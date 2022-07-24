@@ -9,7 +9,7 @@ class Solution(object):
 
         while(p1>=0 or p2>=0):
             if (p1>=0 and s[p1]=='#') or (p2>=0 and t[p2]=='#'):
-                if p1>=0 and s[p1]=='#'=='#':
+                if p1>=0 and s[p1]=='#':
                     back_space=2
                     while(back_space>0):
                         p1-=1
