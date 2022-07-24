@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/trapping-rain-water/
 
 # brute force
 def getTrappedRainwater_optimal(heights):
