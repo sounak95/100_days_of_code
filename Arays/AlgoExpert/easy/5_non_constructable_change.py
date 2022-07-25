@@ -10,6 +10,7 @@ def nonConstructibleChange(coins):
     return change_created+1
 
 print(nonConstructibleChange([5, 7, 1, 1, 2, 3, 22]))
+print(nonConstructibleChange([ 1, 1,  3]))
 
 
 
