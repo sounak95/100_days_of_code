@@ -51,8 +51,8 @@ def printDepthKV2(root,k, d):
     if k==d:
         print(root.data)
 
-    printDepthK(root.left, k, d+1)
-    printDepthK(root.right, k, d+1)
+    printDepthKV2(root.left, k, d+1)
+    printDepthKV2(root.right, k, d+1)
 
 root=treeInput()
 printDetailedTree(root)
