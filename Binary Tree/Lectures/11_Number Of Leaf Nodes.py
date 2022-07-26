@@ -47,5 +47,5 @@ def numLeafNodes(root):
     return numLeafLeft+numLeafRight
 
 root=treeInput()
-printTreeDetailed(root)
+printDetailedTree(root)
 print(numLeafNodes(root))
