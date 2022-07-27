@@ -19,7 +19,7 @@ def subArraySum(nums, k):
             return
 
         curr_sum+=nums[i]
-        # print(curr_sum)
+        # print(curr_sum)x
     if curr_sum == k:
         print(f"found between {start} and {i - 1}")
         return
