@@ -1,4 +1,6 @@
 
+# two pointer
+
 def validate_subseuence(arr, seq):
     arr_idx=0
     seq_idx=0

@@ -1,7 +1,7 @@
 # https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 # Kadane’s Algorithm
 
-
+# siding window
 def maxSubArraySum(a,size):
     max_so_far= float('-inf')
     max_enfding_here = 0

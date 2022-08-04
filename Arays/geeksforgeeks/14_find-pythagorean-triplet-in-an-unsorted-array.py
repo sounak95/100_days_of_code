@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/find-pythagorean-triplet-in-an-unsorted-array/
 
+# two pointer
 
 def isTriplet(ar, ar_size):
     n=ar_size

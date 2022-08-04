@@ -12,11 +12,12 @@ def isMonotonic(array):
     direction=array[1]-array[0]
     for i in range(2,len(array)):
         if direction==0:
+            print("abc")
             direction=array[i]-array[i-1]
             continue
         if breakDirection(direction, array[i], array[i-1]):
             return False
     return True
 
-print(isMonotonic( [-1, -5, -10, -1100, -1100, -1101, -1102, -9001]))
+print(isMonotonic( [-1, -5, -10, -1100, -1100, -1101, -1101, -9001]))
 

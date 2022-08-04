@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/find-subarray-with-given-sum/
 
+# siding window
 def subArraySum(nums, k):
     """
     :type nums: List[int]

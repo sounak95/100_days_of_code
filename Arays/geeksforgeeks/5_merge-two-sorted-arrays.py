@@ -1,5 +1,5 @@
 
-
+# two pointer
 def mergeArrays(arr1, arr2, n1, n2):
 
     i=0

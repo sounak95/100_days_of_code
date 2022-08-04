@@ -1,5 +1,6 @@
 
 # https://practice.geeksforgeeks.org/problems/count-the-triplets4615/1
+# two pointer, three sum
 
 class Solution:
     def countTriplet(self, arr, n):

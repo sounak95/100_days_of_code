@@ -1,3 +1,4 @@
+# two pointer
 
 def smallestDifference(arrayOne, arrayTwo):
     # Write your code here.

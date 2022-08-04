@@ -1,6 +1,6 @@
 # https://practice.geeksforgeeks.org/problems/longest-distinct-characters-in-string5848/1
 
-
+# sliding window and hashing
 
 class Solution:
 

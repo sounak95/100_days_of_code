@@ -1,3 +1,5 @@
+# hashing
+
 NO_OF_CHAR=256
 def firstNonRepeatingCharacter(string):
     # Write your code here.

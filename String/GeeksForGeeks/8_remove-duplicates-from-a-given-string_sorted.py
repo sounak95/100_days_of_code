@@ -22,6 +22,7 @@ def remove_duplicates_sorted(s):
 def removeDups(string):
     l1= list(string)
     l1.sort()
+    print(l1)
     # print("".join(l1))
     return remove_duplicates_sorted(l1)
 

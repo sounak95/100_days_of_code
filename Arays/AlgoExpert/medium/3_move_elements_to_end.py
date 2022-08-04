@@ -1,3 +1,4 @@
+# two pointer
 
 def moveElementToEnd(array, toMove):
     # Write your code here.
@@ -13,6 +14,7 @@ def moveElementToEnd(array, toMove):
         if start<end:
             array[start], array[end]= array[end],array[start]
     return array
+
 
 print(moveElementToEnd([2, 1, 2, 2, 2, 3, 4, 2],2))
 print(moveElementToEnd([1, 2, 4, 5, 6],3))

@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
 
-
+# two pointer
 def sort012(arr, arr_size):
     low=0
     mid=0

@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
 
-
+# two pointer
 
 def findPlatform(arr, dep, n):
     arr.sort()

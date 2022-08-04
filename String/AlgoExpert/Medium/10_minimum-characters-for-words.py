@@ -1,4 +1,4 @@
-
+# hashing
 def countCharFreq(string):
     charFreq={}
 
@@ -10,6 +10,7 @@ def countCharFreq(string):
 
     return charFreq
 
+# hashing
 
 def updateMaxFreq(charFreq, maxCharFreq):
     for ch in charFreq:

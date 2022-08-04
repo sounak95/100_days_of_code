@@ -1,4 +1,4 @@
-
+# left array, right array
 
 def arrayOfProducts(array):
     # Write your code here.

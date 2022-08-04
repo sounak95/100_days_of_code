@@ -1,3 +1,5 @@
+# two pointer
+
 def twoNumberSum(array, targetSum):
     array.sort()
     left=0

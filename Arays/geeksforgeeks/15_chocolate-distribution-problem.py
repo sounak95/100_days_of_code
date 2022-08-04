@@ -1,5 +1,7 @@
 # https://www.geeksforgeeks.org/chocolate-distribution-problem/
 
+# sliding window
+
 def findMinDiff(arr, n, m):
     if n==0 or m==0:
         return 0

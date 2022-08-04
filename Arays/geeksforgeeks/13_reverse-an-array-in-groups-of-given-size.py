@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/reverse-an-array-in-groups-of-given-size/
 
+# two pointer
 
 
 def reverse(arr, n, k):

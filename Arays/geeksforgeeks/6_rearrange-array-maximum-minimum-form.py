@@ -1,6 +1,6 @@
 # https://www.geeksforgeeks.org/rearrange-array-maximum-minimum-form/
 
-
+# two pointer
 def rearrange(arr, n):
     temp= [None]*n
     small=0

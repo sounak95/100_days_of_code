@@ -10,8 +10,6 @@ def counter(arr):
 
 
 def relativeSort(arr1, arr2):
-    arr1=A1
-    arr2 = A2
     f= counter(arr1)
 
     res=[]
@@ -21,10 +19,14 @@ def relativeSort(arr1, arr2):
             res.extend([ele]*f[ele])
             f[ele] = 0
 
-    # print(f)
+    print(f)
     # print(res)
 
+
     rem = list(sorted(filter(lambda x:f[x]!=0, f)))
+
+    # for item in (filter(lambda x:f[x]!=0, f)):
+    #     print(item)
 
     # print(rem)
     for ele in rem:

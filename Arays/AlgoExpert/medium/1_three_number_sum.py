@@ -1,4 +1,4 @@
-
+# two pointer
 
 def threeNumberSum_brute_force(array, targetSum):
     # Write your code here.

@@ -1,7 +1,7 @@
 
 
 # https://www.geeksforgeeks.org/find-the-element-before-which-all-the-elements-are-smaller-than-it-and-after-which-all-are-greater-than-it/
-
+# left array, right array
 
 def findElement(arr, n):
 

@@ -1,3 +1,4 @@
+# hashing
 
 def firstDuplicateValueBruteForce(array):
     # Write your code here.
