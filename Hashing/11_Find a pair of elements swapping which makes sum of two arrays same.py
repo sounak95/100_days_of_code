@@ -1,5 +1,5 @@
 # https://www.geeksforgeeks.org/find-a-pair-swapping-which-makes-sum-of-two-arrays-same/
-
+# two pointer
 class Solution:
 
     def getSum(self,A):

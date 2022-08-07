@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/find-whether-an-array-is-subset-of-another-array-set-1/
 
+# two pointer
 
 def isSubset_1( a1, a2, n, m):
     a1.sort()

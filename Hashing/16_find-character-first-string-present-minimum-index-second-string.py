@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/
 
+# Check brute force approach
 
 class Solution:
 
