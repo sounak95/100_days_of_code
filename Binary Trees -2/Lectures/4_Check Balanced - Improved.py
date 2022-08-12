@@ -66,11 +66,11 @@ def getHightAndCheckBalanced(root):
     h= 1+max(lh,rh)
 
     if lh-rh>1 or rh-lh>1:
-        return False
+        return h,False
     if isLeftBalanced and isRightBalanced:
-        return True
+        return h,True
     else:
-        return False
+        return h,False
 
 def isBalanced2(root):
     h, isRootBalanced = getHightAndCheckBalanced(root)

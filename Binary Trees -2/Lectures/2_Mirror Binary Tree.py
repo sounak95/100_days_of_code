@@ -49,8 +49,8 @@ class BinaryTreeNode:
 def mirrorBinaryTree(root):
     if root==None:
         return
-    mirrorBinaryTree(root.right)
     mirrorBinaryTree(root.left)
+    mirrorBinaryTree(root.right)
 
     root.left, root.right = root.right, root.left
 

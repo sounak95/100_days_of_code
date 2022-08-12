@@ -24,13 +24,14 @@ class Stack:
         return self.getSize() == 0
     # Implement the isEmpty() function
 
+    # insert from beginning
     def push(self, element):
         newNode = Node(element)
         newNode.next = self.__head
         self.__head = newNode
         self.__count += 1
     # Implement the push(element) function
-
+    # delete from beginning
     def pop(self):
         if self.isEmpty():
             print(f"Stack is empty")

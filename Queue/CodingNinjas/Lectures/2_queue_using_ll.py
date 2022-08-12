@@ -25,6 +25,7 @@ class Queue:
         return self.__count==0
     # Implement the isEmpty() function
 
+    # insert from end
     def enqueue(self, data):
         newNode= Node(data)
         if self.__head is None:
@@ -34,7 +35,7 @@ class Queue:
         self.__tail=newNode
         self.__count+=1
     # Implement the enqueue(element) function
-
+    # delete from beginning
     def dequeue(self):
         if self.isEmpty():
             return -1

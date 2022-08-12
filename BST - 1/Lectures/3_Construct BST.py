@@ -30,9 +30,11 @@ def constructBST(lst):
 
     if not lst:
         return None
-    mid= len(lst)//2
+    if len(lst)%2!=0:
+        mid= len(lst)//2
+    else:
+        mid= (len(lst)-1)//2 # Note: If array size is even, take first mid as root.
     root=BinaryTreeNode(lst[mid])
-
     root.left = constructBST(lst[:mid])
     root.right = constructBST(lst[mid+1:])
 

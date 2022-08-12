@@ -3,7 +3,6 @@ class BinaryTreeNode:
         self.data=data;
         self.left=None
         self.right=None
-
 def search(root,x):
     if root==None:
         return False
@@ -51,33 +50,25 @@ def takeTreeInputLevelWise():
             q.put(rightChild)
     return root
 
-def minTree(root):
+def nodeToRootPath(root,s):
     if root==None:
-        return float('inf')
-    leftMin = minTree(root.left)
-    rightMin = minTree(root.right)
-    return min(root.data, leftMin, rightMin)
+        return None
+    if root.data ==s:
+        l=[]
+        l.append(root.data)
+        return l
+    leftOutput = nodeToRootPath(root.left, s)
+    if leftOutput!=None:
+        leftOutput.append(root.data)
+        return leftOutput
+    rightOutput= nodeToRootPath(root.right,s)
+    if rightOutput!=None:
+        rightOutput.append(root.data)
+        return rightOutput
+    else:
+        return None
 
-def maxTree(root):
-    if root==None:
-        return float('inf')
-    leftMax = maxTree(root.left)
-    rightMax = minTree(root.right)
-    return max(root.data, leftMax, rightMax)
-
-def isBst(root):
-    if root==None:
-        return True
-    leftMax = maxTree(root.left)
-    rightMin = minTree(root.right)
-
-    if root.data<=leftMax or root.data>rightMin:
-        return False
-    isLeftBst = isBst(root.left)
-    isRightBst = isBst(root.right)
-
-    return isLeftBst and isRightBst
 
 root=takeTreeInputLevelWise()
 printTreeDetailed(root)
-isBst(root)
+nodeToRootPath(root,5)
