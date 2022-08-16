@@ -51,7 +51,7 @@ def heightOfTree(root):
         return 0
     height = 0
     for child in root.children:
-        height=   max(heightOfTree(child), height)
+        height=max(heightOfTree(child), height)
     return height +1
 
 
