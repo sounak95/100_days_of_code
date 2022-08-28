@@ -1,5 +1,7 @@
 # https://www.geeksforgeeks.org/check-if-two-arrays-are-equal-or-not/
 
+# use hasing to track the frequency of the characters
+
 class Solution:
     # Function to check if two arrays are equal or not.
     def check(self, A, B, N):

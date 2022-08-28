@@ -1,7 +1,7 @@
 # https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/
 # https://www.youtube.com/watch?v=C9-n_H7dsvU
 
-
+# use hasing to store the occurances of prefix sum
 class Solution:
     # Function to count subarrays with sum equal to 0.
     def findSubArrays(self, arr, n):

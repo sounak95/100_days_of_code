@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/majority-element/
 
+# use hasing to store frequency of elements in an array
+
 class Solution(object):
     def majorityElement(self, nums):
         """

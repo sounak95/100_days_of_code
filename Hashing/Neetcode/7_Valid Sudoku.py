@@ -1,5 +1,7 @@
 
 # https://leetcode.com/problems/valid-sudoku/
+
+# use hasing to check for duplicates
 import collections
 
 class Solution(object):

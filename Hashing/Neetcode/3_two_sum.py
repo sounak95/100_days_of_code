@@ -1,6 +1,8 @@
 
 # https://leetcode.com/problems/two-sum/
 
+# use hasing to store elements and their corresponding index
+
 class Solution(object):
     def twoSum(self, nums, target):
         """

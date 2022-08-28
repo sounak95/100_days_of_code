@@ -4,6 +4,8 @@
 
 # https://practice.geeksforgeeks.org/problems/count-pairs-in-array-divisible-by-k/1
 
+# use hasing to store the remainders of every element
+
 def codePair(nums, k):
 
     m={}

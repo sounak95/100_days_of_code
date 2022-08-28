@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/top-k-frequent-elements/
 
+# use hashing to store frequency of elements, then apply bucket sort
+
 class Solution(object):
     def topKFrequent(self, nums, k):
         """

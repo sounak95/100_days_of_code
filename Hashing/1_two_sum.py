@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/two-sum/
 
+# use hashing to store number and corresponding index
+
 class Solution(object):
     def twoSum(self, nums, target):
         """

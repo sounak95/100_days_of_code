@@ -20,6 +20,7 @@ class Solution:
                 return -1
             res = res*10 +   ord(string[i])-ord('0')
             i+=1
+            print(res)
         if isNegative:
             return -1* res
 

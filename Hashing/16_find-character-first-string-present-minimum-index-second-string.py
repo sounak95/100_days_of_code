@@ -2,6 +2,8 @@
 
 # Check brute force approach
 
+# use hasing to store the first occurence of every char in str
+
 class Solution:
 
     # Function to find the minimum indexed character.

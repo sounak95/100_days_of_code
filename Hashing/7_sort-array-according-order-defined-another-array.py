@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/sort-array-according-order-defined-another-array/
 
+# use hasing to store frequency of elements
 
 def counter(arr):
     d={}

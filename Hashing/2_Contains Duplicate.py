@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/contains-duplicate/
 
+# use hasing to check duplicates
+
 class Solution(object):
     def containsDuplicate(self, nums):
         """

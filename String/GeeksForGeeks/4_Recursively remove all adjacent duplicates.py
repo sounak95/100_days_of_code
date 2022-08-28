@@ -25,14 +25,22 @@ def remove(s):
             res+=s[i]
         i+=1
 
-    # res=s[0]
-    # for i in range(1,len(s)):
-    #     current_char=s[i]
-    #     prev_char = s[i-1]
-    #
-    #     if current_char!=prev_char:
-    #         res+=s[i]
+    return res
+
+
+def remove1(s):
+    i=0
+    n=len(s)
+    res=""
+    while(i<n):
+        if i<n-1 and s[i]==s[i+1]:
+            while(i<n-1 and s[i]==s[i+1]):
+                i+=1
+        else:
+            res+=s[i]
+            i+=1
 
     return res
 
 print(rremove("azxxzy"))
+print(remove1("azxxzzzzyyyy"))

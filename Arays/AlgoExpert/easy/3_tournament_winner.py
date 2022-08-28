@@ -17,7 +17,7 @@ def tournamentWinner(competitions, results):
     for idx, competition in enumerate(competitions):
         home_team,away_team=competition
         if results[idx] == HOME_TEAM_WON:
-            winning_team= home_team
+            winning_team = home_team
         else:
             winning_team = away_team
         update_score(winning_team,scores, point=3)

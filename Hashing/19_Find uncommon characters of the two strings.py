@@ -1,6 +1,7 @@
 
 
 # https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/
+# use hasing to track the frequency of the characters
 
 class Solution:
     def UncommonChars(self, A, B):

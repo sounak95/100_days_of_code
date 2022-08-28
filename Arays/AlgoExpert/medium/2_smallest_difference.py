@@ -28,6 +28,7 @@ def smallestDifference(arrayOne, arrayTwo):
         if currentDiff<smallestDiff:
             smallestDiff=currentDiff
             smallestPair=[firstNum,secondNum]
+
     return smallestPair
 
 

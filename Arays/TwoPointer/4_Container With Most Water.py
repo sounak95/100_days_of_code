@@ -11,6 +11,7 @@ class Solution(object):
         """
         l,r = 0, len(height)-1
         area=0
+
         while(l<r):
             area=max(area, min(height[l],height[r]) * (r-l))
 

@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/group-anagrams/
 
+#use hasing to groups elements by sorted string
+
 class Solution(object):
     def groupAnagrams(self, strs):
         """

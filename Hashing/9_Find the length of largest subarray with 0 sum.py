@@ -1,6 +1,7 @@
 
 # https://www.geeksforgeeks.org/find-the-largest-subarray-with-0-sum/
 
+# use hasing to store first prefix sum
 class Solution:
     def maxLen(self, n, arr):
         #Code

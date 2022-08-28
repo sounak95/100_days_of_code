@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/group-anagrams/
 
+# use hashing to store frequency of elements and group elements by them
+
 import collections
 class Solution(object):
     def groupAnagrams(self, strs):

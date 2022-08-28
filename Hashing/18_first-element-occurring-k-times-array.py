@@ -1,5 +1,7 @@
 # https://www.geeksforgeeks.org/first-element-occurring-k-times-array/
 
+# use hasing to track the frequency of the characters
+
 class Solution:
     def firstElementKTime(self,  a, n, k):
         # code here

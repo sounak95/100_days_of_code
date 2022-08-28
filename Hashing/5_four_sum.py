@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/4sum-ii/
 
+# use hasing to store sum of two numbers in corresponding arrays
+
 class Solution(object):
     def fourSumCount(self, nums1, nums2, nums3, nums4):
         """
