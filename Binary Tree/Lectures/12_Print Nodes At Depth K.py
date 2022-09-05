@@ -36,6 +36,7 @@ def treeInput():
     root.right = rightTree
     return root
 
+
 def printDepthK(root,k):
     if root ==None:
         return
@@ -44,6 +45,7 @@ def printDepthK(root,k):
 
     printDepthK(root.left, k-1)
     printDepthK(root.right, k-1)
+
 
 def printDepthKV2(root,k, d):
     if root ==None:

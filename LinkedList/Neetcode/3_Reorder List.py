@@ -14,7 +14,6 @@ class Solution(object):
         :type head: ListNode
         :rtype: None Do not return anything, modify head in-place instead.
         """
-
         # find middle
         slow, fast = head, head
 
