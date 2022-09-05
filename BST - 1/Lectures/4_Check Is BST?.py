@@ -60,7 +60,7 @@ def minTree(root):
 
 def maxTree(root):
     if root==None:
-        return float('inf')
+        return float('-inf')
     leftMax = maxTree(root.left)
     rightMax = minTree(root.right)
     return max(root.data, leftMax, rightMax)
