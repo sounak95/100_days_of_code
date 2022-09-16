@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/two-sum/
+1# https://leetcode.com/problems/two-sum/
 
 # use hashing to store number and corresponding index
 
@@ -16,6 +16,7 @@ class Solution(object):
                 return m[goal], i
             m[num]=i
         return -1
+
 nums = [3,2,4]
 target = 6
 s=Solution()

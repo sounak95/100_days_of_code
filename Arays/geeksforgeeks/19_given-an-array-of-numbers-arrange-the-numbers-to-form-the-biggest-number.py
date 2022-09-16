@@ -12,6 +12,7 @@ def largestNumber(arr):
             if arr[i]+arr[j]<arr[j]+arr[i]:
                 # print(f"swapping {arr[i]} and {arr[j]}")
                 arr[i], arr[j] = arr[j], arr[i]
+        print(arr)
 
         # print(arr)
 

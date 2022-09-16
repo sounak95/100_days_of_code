@@ -1,5 +1,4 @@
 
-
 # https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
 
@@ -22,3 +21,4 @@ class Solution(object):
                 r-=1
             else:
                 return [l+1,r+1]
+

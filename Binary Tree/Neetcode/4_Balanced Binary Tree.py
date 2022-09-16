@@ -24,11 +24,14 @@ class Solution(object):
         if lh - rh > 1 or rh - lh > 1:
             isBalanced = False
 
-        if isBalanced:
-            if isBalancedLeft and isBalancedRight:
-                isBalanced = True
-            else:
-                isBalanced = False
+        # if isBalanced:
+        #     if isBalancedLeft and isBalancedRight:
+        #         isBalanced = True
+        #     else:
+        #         isBalanced = False
+
+        if not isBalancedLeft or not isBalancedRight:
+            isBalanced=False
 
         return h, isBalanced
 

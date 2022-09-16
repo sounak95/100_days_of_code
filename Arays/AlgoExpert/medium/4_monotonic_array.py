@@ -12,7 +12,6 @@ def isMonotonic(array):
     direction=array[1]-array[0]
     for i in range(2,len(array)):
         if direction==0:
-            print("abc")
             direction=array[i]-array[i-1]
             continue
         if breakDirection(direction, array[i], array[i-1]):

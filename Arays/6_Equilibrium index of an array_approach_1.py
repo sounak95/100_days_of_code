@@ -49,4 +49,3 @@ for i in range(n):
 
 if flag:
     print(-1)
-

@@ -26,6 +26,7 @@ temp=''
 for ch in str:
     if ch.isdigit():
         temp+=ch
+        # print(temp)
     else:
         sum+=int(temp)
         temp='0'

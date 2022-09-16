@@ -23,7 +23,7 @@ class Solution:
                 ans=sunstr
                 max_len = max(len(sunstr), max_len)
             right+=1
-        print((ans))
+        print(ans)
         return max_len
 
 s=Solution()
