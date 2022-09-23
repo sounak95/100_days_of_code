@@ -26,7 +26,7 @@ def relativeSort(arr1, arr2):
 
     rem = list(sorted(filter(lambda x:f[x]!=0, f)))
 
-    # print(rem)
+    print(rem)
 
     # for item in (filter(lambda x:f[x]!=0, f)):
     #     print(item)

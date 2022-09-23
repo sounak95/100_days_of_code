@@ -1,4 +1,4 @@
-1# https://leetcode.com/problems/two-sum/
+# https://leetcode.com/problems/two-sum/
 
 # use hashing to store number and corresponding index
 

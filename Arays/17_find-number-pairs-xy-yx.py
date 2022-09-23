@@ -21,4 +21,3 @@ for i in range(len(arr1)):
             print(arr1[i],arr2[j])
             count+=1
 print(count)
-

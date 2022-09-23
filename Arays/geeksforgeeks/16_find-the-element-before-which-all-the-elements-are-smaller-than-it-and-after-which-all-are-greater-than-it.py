@@ -25,9 +25,6 @@ def findElement(arr, n):
     return -1
 
 
-
-
-
 # Driver program
 if __name__ == "__main__":
     arr = [5, 1, 4, 3, 6, 8, 10, 7, 9]

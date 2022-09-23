@@ -26,5 +26,3 @@ class Solution:
 s=Solution()
 print(s.countTriplet([1, 5, 3, 2], 4))
 
-
-
