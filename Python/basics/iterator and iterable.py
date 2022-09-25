@@ -5,6 +5,7 @@ it = iter(nums)
 print(it.__next__())
 print(next(it))
 
+
 class TopTen:
     def __init__(self):
         self.num =1
@@ -19,6 +20,7 @@ class TopTen:
             return val
         else:
             raise StopIteration
+
 
 it = iter(TopTen())
 print(it.__next__())
