@@ -30,11 +30,14 @@ def check_a_b(str,i):
     if i==len(str):
         return True
     if i==0:
+        # The string begins with an 'a'
         if str[i]!='a':
             return False
+    # Each 'a' is followed by nothing or an 'a' or "bb"
     if str[i]=='a' and i!=len(str)-1:
         if  (str[i+1]!='a' and str[i+1:i+3]!='bb'):
             return False
+    # Each "bb" is followed by nothing or an 'a'
     if str[i:i+2]=='bb' and i+2!=len(str):
         if str[i+2]!='a':
             return False

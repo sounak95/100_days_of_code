@@ -76,7 +76,7 @@ def sumOfTwoArrays(arr1, n, arr2, m, output):
         k-=1
         i-=1
 
-    while(j>0):
+    while(j>=0):
         sum=arr2[j] + carry
         output[k]= sum%10
         carry= sum//10

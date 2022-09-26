@@ -1,8 +1,10 @@
 
 # https://www.geeksforgeeks.org/reverse-words-in-a-given-string/
 
+
+
 def reverse(word):
-    word = list(word)
+    word = list(word.split(" "))
     start =0
     end=len(word)-1
 
@@ -11,7 +13,7 @@ def reverse(word):
         start+=1
         end-=1
 
-    return "".join(word)
+    return " ".join(word)
 
 def reverseWords(S):
 
@@ -25,4 +27,5 @@ def reverseWords(S):
 S = "geeks quiz practice code"
 S = "getting good at coding needs a lot of practice"
 print(reverseWords(S))
+print(reverse(S))
 
