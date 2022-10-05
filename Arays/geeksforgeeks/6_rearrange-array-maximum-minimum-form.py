@@ -13,6 +13,7 @@ def rearrange(arr, n):
         else:
             temp[i]= arr[large]
             large-=1
+
     for ele in temp:
         print(ele, end=' ')
 

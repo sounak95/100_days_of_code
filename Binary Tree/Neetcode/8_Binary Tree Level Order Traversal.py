@@ -31,6 +31,7 @@ class Solution(object):
         q.put(None)
         l1 = []
         l2 = []
+
         while (not q.empty()):
             currentNode = q.get()
             if currentNode is not None:

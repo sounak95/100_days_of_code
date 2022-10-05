@@ -95,6 +95,7 @@ def mergeSort(head):
         return head
 
     mid = midPoint(head)
+    # print(mid.data)
     head2=mid.next
     mid.next=None
     newHead1 = mergeSort(head)
