@@ -31,8 +31,6 @@ def utility(d, head1, head2):
             return current1.data
         # print("******")
         # print(current1.data, current2.data)
-        if current1 is current2:
-            return current1.data
         current1 = current1.next
         current2 = current2.next
 

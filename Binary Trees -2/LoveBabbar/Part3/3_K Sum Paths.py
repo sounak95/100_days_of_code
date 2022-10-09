@@ -29,7 +29,7 @@ class Solution:
         path.pop()
 
 
-    def sumK(self,root,k):
+    def sumK(self,root,k) :
         # code here
         path=[]
         self.solve(root,k,path )
