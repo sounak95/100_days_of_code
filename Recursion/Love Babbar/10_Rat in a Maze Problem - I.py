@@ -23,23 +23,28 @@ class Solution:
         if self.issafe(row+1, col, m, n, visited):
             path+='D'
             self.print_path_util(row+1, col, m,n, path, possiblepaths, visited)
+            # backtracking
             path = path[:-1]
 
         if self.issafe(row, col-1, m, n, visited):
             path+='L'
             self.print_path_util(row, col-1, m,n, path, possiblepaths, visited)
+            # backtracking
             path = path[:-1]
 
         if self.issafe(row-1, col, m, n, visited):
             path+='U'
             self.print_path_util(row-1, col, m,n, path, possiblepaths, visited)
+            # backtracking
             path = path[:-1]
 
         if self.issafe(row, col+1, m, n, visited):
             path+='R'
             self.print_path_util(row, col+1, m,n, path, possiblepaths, visited)
+            # backtracking
             path = path[:-1]
 
+        # backtracking
         visited[row][col] = False
 
 
