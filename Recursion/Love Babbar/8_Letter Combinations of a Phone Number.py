@@ -4,7 +4,6 @@
 
 class Solution(object):
 
-
     def solve(self, digits, output, index, ans, mapping):
         if index>= len(digits):
             l1 = output.copy()
