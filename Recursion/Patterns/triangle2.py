@@ -1,5 +1,10 @@
 
-
+'''
+*
+* *
+* * *
+* * * *
+'''
 def triangle(r,c):
     if r==0:
         return
