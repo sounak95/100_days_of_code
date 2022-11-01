@@ -40,6 +40,20 @@ def solveTab(n,k):
 
     return dp[n]
 
+def solveSpace(n,k):
+    prev2 =k
+    if n==1:
+        return prev2
+    if n>1:
+        prev1 =add(k, mul(k,k-1))
+
+    for i in range(3, n+1):
+        ans = add(mul(prev2, k-1), mul(prev1,k-1))
+        prev2= prev1
+        prev1= ans
+
+    return prev1
+
 
 def numberOfWays(n, k):
     # return solveRec(n,k)
@@ -47,6 +61,7 @@ def numberOfWays(n, k):
     # dp =[-1] * (n+1)
     # return solveMem(n,k,dp)
 
-    return solveTab(n,k)
+    # return solveTab(n,k)
+    return solveSpace(n,k)
 
 print(numberOfWays(1,1))
