@@ -13,10 +13,11 @@ def helper(str, i, output, ans):
             ans.append("".join(l1))
         return
 
-    helper(str,i+1,output.copy(), ans)
+    helper(str,i+1,output, ans)
 
     output.append(str[i])
-    helper(str, i + 1, output.copy(), ans)
+    helper(str, i + 1, output, ans)
+    output.pop()
 
 def subsequences(str):
 

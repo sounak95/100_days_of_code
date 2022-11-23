@@ -3,12 +3,12 @@
 class Solution(object):
     def solve(self,nums, ans, index):
         if index>= len(nums):
-            ans.append(nums)
+            ans.append(nums.copy())
             return
 
         for j in range(index, len(nums)):
             nums[index], nums[j] = nums[j], nums[index]
-            self.solve(nums.copy(), ans, index+1)
+            self.solve(nums, ans, index+1)
             # backtrack
             nums[index], nums[j] = nums[j], nums[index]
 

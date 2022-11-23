@@ -15,7 +15,7 @@ class Solution(object):
 
         for i, value in enumerate(values):
             output.append(value)
-            self.solve(digits, output.copy(), index+1, ans, mapping)
+            self.solve(digits, output, index+1, ans, mapping)
             output.pop()
 
     def letterCombinations(self, digits):
