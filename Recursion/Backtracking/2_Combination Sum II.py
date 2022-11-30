@@ -1,6 +1,8 @@
 
 # https://leetcode.com/problems/combination-sum-ii/
 
+# Each number in candidates may only be used once in the combination.
+
 class Solution(object):
     def findCombination(self, ind, target, arr, ans, ds):
 

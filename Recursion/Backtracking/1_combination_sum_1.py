@@ -1,6 +1,8 @@
 
 # https://leetcode.com/problems/combination-sum/
 
+# Given an array of distinct integers candidates
+# The same number may be chosen from candidates an unlimited number of times.
 class Solution(object):
 
     def findCombination(self, index, target, arr, ans, ds):
