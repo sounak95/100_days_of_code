@@ -45,6 +45,3 @@ if __name__ == '__main__':
     # step 1
     dp=[-1] * (n+1)
     print(fibo2(n))
-
-
-
