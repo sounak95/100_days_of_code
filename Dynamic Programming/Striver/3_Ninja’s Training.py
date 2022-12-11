@@ -12,7 +12,7 @@ def func1(day, last, points):
     max_i=0
     for task in range(0, 3):
         if task != last:
-            point = points[day][task] + func(day-1, task, points)
+            point = points[day][task] + func1(day-1, task, points)
             max_i = max(max_i, point)
     return max_i
 
