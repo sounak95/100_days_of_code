@@ -42,7 +42,7 @@ def minSumPath2(grid):
     return func2(n - 1, m - 1, grid, dp)
 
 import copy
-def minSumPath(grid):
+def minSumPath3(grid):
     # Write your code here.
     n = len(grid)
     m = len(grid[0])
@@ -59,7 +59,7 @@ def minSumPath(grid):
             else:
                 up=grid[i][j]
                 if i>0:
-                    up=+ dp[i-1][j]
+                    up+= dp[i-1][j]
                 else:
                     up+=float('inf')
 
@@ -72,3 +72,32 @@ def minSumPath(grid):
                 dp[i][j] = min(up,left)
 
     return dp[n-1][m-1]
+
+def minSumPath(grid):
+    # Write your code here.
+    n = len(grid)
+    m = len(grid[0])
+    prev = [0] * m
+
+    for i in range(n):
+        temp = [0] * m
+        for j in range(m):
+            if i==0 and j==0:
+                 temp[j] =grid[i][j]
+            else:
+                up=grid[i][j]
+                if i>0:
+                    up+= prev[j]
+                else:
+                    up=float('inf')
+
+                left = grid[i][j]
+                if j>0:
+                    left+= temp[j-1]
+                else:
+                    left=float('inf')
+
+                temp[j] = min(up,left)
+        prev = temp
+
+    return prev[m-1]
