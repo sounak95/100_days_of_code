@@ -7,8 +7,8 @@ def func1(ind, nums):
         return nums[ind]
     if ind<0:
         return 0
-    pick = nums[ind] + func(ind-2, nums)
-    not_pick = 0+ func(ind-1, nums)
+    pick = nums[ind] + func1(ind-2, nums)
+    not_pick = 0+ func1(ind-1, nums)
     return max(pick, not_pick)
 
 def maximumNonAdjacentSum1(nums):
@@ -26,8 +26,8 @@ def func2(ind, nums, dp):
     if dp[ind] != -1:
         return dp[ind]
 
-    pick = nums[ind] + func(ind - 2, nums, dp)
-    not_pick = 0 + func(ind - 1, nums, dp)
+    pick = nums[ind] + func2(ind - 2, nums, dp)
+    not_pick = 0 + func2(ind - 1, nums, dp)
     dp[ind] = max(pick, not_pick)
 
     return dp[ind]
